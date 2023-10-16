@@ -3,10 +3,16 @@ Abstract: Online website to search for the best exercises for the muscle you wan
 Additional features added overtime:
 
 Added landing page
+
 Added search function
+
 Added body part filter
+
 Added body part scrolling
+
 Added similar exercises
+
 Added similar equipment
+
 
 Link to live project: https://beestrong.netlify.app/
