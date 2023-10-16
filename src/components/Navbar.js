@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Stack } from '@mui/material'  //stack component manages layout of immediate children along the vertical or horizontal axis with optional spacing and/or dividers between each child
+import { Typography, Stack } from '@mui/material'  //stack component manages layout of immediate children along the vertical or horizontal axis with optional spacing and/or dividers between each child
 
-import Logo from '../assets/images/Logo.png'
+import Logo from '../assets/icons/beestrong-logo.png'
 
 
 const Navbar = () => {
@@ -18,30 +18,43 @@ const Navbar = () => {
     >
       <Link to='/'>
         <img src={Logo} alt='logo' style={{
-            width: '48px', 
-            height: '48px', 
+            width: '133px', 
+            height: '120px', 
             margin:'0 20px'
           }} />
       </Link>
       <Stack
         direction='row'
-        gap='40px'
+        gap='65px'
         fontSize='24px'
         alignItems='flex-end'
       >
-        <Link to='/' style={{
-            textDecoration: 'none',
-            color: '#3A1212',
-            borderBottom: '3px solid #FF2625'
-          }} >
-            Home
-        </Link>
-        <a href='#exercises' style={{
-            textDecoration: 'none',
-            color: '#3A1212'
-          }}>
-            Exercises
-        </a>
+        <Typography 
+          className='nav-btn'
+          fontWeight={700}
+          fontSize='20px'
+        >
+          <Link to='/' style={{
+              textDecoration: 'none',
+              color: '#3A1212',
+              borderBottom: '4px solid transparent'
+            }} >
+              Home
+          </Link>
+        </Typography>
+        <Typography 
+          className='nav-btn'
+          fontWeight={700}
+          fontSize='20px'
+        >
+          <a href='#exercises' style={{
+              textDecoration: 'none',
+              color: '#3A1212',
+              borderBottom: '4px solid transparent'
+            }}>
+              Exercises
+          </a>
+        </Typography>
       </Stack>
     </Stack>
   )

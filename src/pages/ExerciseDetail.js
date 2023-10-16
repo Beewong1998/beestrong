@@ -31,6 +31,8 @@ const ExerciseDetail = () => {
       const equipmentExercisesData = await fetchData(`${exerciseDbUrl}/exercises/equipment/${exerciseDetailData.equipment}`, exerciseOptions);
       setEquipmentExercises(equipmentExercisesData);
 
+      window.scrollTo({top: 0, behavior: 'smooth'})
+
     }
 
     fetchExercisesData()

@@ -15,7 +15,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
             variant='h3'
             mb='33px'
         >
-            Video Examples of <span style={{color: '#ff2625', textTransform: 'capitalize'}}>{name}</span>         
+            Video Examples of <span style={{color: '#f8d16c', textTransform: 'capitalize'}}>{name}</span>         
         </Typography>
         <Stack 
             justifyContent='flex-start'

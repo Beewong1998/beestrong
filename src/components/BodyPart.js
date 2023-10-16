@@ -1,3 +1,5 @@
+//component for bodypart filter
+
 import React from 'react';
 import { Stack, Typography } from '@mui/material';
 
@@ -10,9 +12,10 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         justifyContent='center'
         className='bodyPart-card'
         sx={{
-            borderTop: bodyPart === item ? '4px solid #ff2625' : '',
+            borderTop: bodyPart === item ? '4px solid #f8d16c' : '',
             backgroundColor: '#fff',
             borderBottomLeftRadius: '20px',
+            borderBottomRightRadius: '20px',
             width: '270px',
             height: '280px',
             cursor: 'pointer',

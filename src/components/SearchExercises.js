@@ -33,6 +33,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
       setSearch('');   //make search box empty again
       setExercises(searchedExercises);   //sets the array of the filtered exercises to the setExercises
+      document.getElementById("exercises").scrollIntoView();
     }
   } 
 
@@ -51,7 +52,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         mb='50px'
         textAlign='center'
       >
-        Awesome Exercises You <br />
+        'Bee'st Exercises You <br />
         Should Know
       </Typography>
       <Box
@@ -75,11 +76,17 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder='Search Exercises'
           type='text'
+          onKeyDown={(ev) => {
+            if (ev.key === 'Enter') {
+              handleSearch();
+              ev.preventDefault();
+            }
+          }}
         />
         <Button 
           className='search-btn'
           sx={{
-            bgcolor: '#ff2625',
+            bgcolor: '#f8d16c',
             color: '#fff',
             textTransform: 'none',
             width: { lg: '175px', xs: '80px' },

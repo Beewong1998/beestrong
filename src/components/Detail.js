@@ -52,7 +52,7 @@ const Detail = ({ exerciseDetail }) => {
                 >
                     <Button 
                         sx={{
-                            background: '#fff2db',
+                            background: '#f8d16c',
                             borderRadius: '50%',
                             width: '100px',
                             height: '100px'
