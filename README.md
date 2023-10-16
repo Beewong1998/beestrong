@@ -1,14 +1,12 @@
-Abstract: Online shop for pet accessories I wanted to make an E-Commerce website to practice my coding skills. In this project I made use of HTML, CSS, JavaScript, React, Strapi and Stripe
+Abstract: Online website to search for the best exercises for the muscle you want to train. I wanted to make a website making use of RapidAPI to practice my coding skills. In this project I made use of HTML, CSS, JavaScript, React, and RapidAPI
 
 Additional features added overtime:
 
-Added filter tabs
-Added image carousel
-Added page linked to image carousel
-Added related products
-Added filter slider
-Issues encountered along the way:
+Added landing page
+Added search function
+Added body part filter
+Added body part scrolling
+Added similar exercises
+Added similar equipment
 
-One image broke the website because the dimensions were too small
-Struggling to deploy the website with Strapi database
-Link to live project: http://lnkiy.in/busybee
+Link to live project: https://beestrong.netlify.app/
